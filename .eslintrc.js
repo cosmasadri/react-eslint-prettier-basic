@@ -7,11 +7,9 @@ module.exports = {
   },
   extends: [
     'airbnb',
-    'eslint:recommended',
     'plugin:react/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
     'prettier/react',
-    'prettier/@typescript-eslint',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -20,12 +18,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'jest',
-    'prettier',
-    'react',
-    'react-hooks',
-  ],
+  plugins: ['jest', 'react', 'react-hooks'],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/react-in-jsx-scope': 'off',
